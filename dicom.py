@@ -20,14 +20,8 @@ import dcmstack as ds
 #from .parser import find_files
 #from .utils import (load_json, save_json, create_file_if_missing,
 #                    json_dumps_pretty, set_readonly, is_readonly)
-
-            
-def untar_tgz(item):
-    data_dir = 
-    result_dir =
-    
-
-def get_scan_info(item):
+           
+def get_scan_info(root):
     """
     Parameters:
     item
@@ -36,7 +30,8 @@ def get_scan_info(item):
     row: list
         [ISO acquisition time, performing physician name, random string]
     """
-    dcm_fn = item[-1][0]
+    for path, subdirs, files in os.walk(root):
+        dcm_fn = files[-1]
     mw = ds.wrapper_from_data(dcm.read_file(dcm_fn,
                                             stop_before_pixels=True,
                                             force=True))
