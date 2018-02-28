@@ -118,10 +118,12 @@ dict_subID['20170819'] = 'sub-014_ses-1w'
 #dict_subID['20170905'] = 'sub-019_ses-1w'
 #dict_subID['20171002'] = 'sub-019_ses-1m'
 #subID['20170908'] = '021_sec-pre'
-#By 2018-02-28 sub-21_treat1 has not be process
-#dict_subID['20170910'] = 'sub-021_ses-baseline'
-#dict_subID['20170917'] = 'sub-021_ses-1w'
-#dict_subID['20171013'] = 'sub-021_ses_1m' 
+########
+##By 2018-02-28 sub-21_treat1 has not be process
+#######
+dict_subID['20170910'] = 'sub-021_ses-baseline'
+dict_subID['20170917'] = 'sub-021_ses-1w'
+dict_subID['20171013'] = 'sub-021_ses_1m' 
 dict_subID['20180108'] = 'sub-021_ses_baseline'
 dict_subID['20180113'] = 'sub-021_ses-1w'
 #dict_subID['20170929'] = 'sub-024_ses-baseline'
