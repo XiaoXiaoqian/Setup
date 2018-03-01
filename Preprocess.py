@@ -9,6 +9,8 @@ from utility import *
 #scp -r xiaoqian@cnic22.stanford.edu:/home/xiaoqian/Documents/nimsfs/raw/nolanw/atbs/$filename
 #/Users/xiaoqian/Projects/atbs/raw
 import os
+import os.path as op
+from glob import glob
 
 remotehost = 'xiaoqian@cnic22.stanford.edu'
 remotedir = '/home/xiaoqian/Documents/nimsfs/raw/nolanw/atbs'
@@ -16,5 +18,5 @@ localdir = '/Users/xiaoqian/Projects/aTBS/raw'
 
 for i in dict_subID:
     print (dict_subID[i])
-    filename = i
-    os.system('scp -r "%s:%s/%s" "%s"' % (remotehost, remotedir, filename, localdir))
+    filename = os.path.join(remotedir, i+'*')
+    os.system('scp -r "%s:%s" "%s"' % (remotehost, filename, localdir))
