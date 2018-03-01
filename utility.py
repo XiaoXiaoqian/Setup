@@ -95,19 +95,18 @@ dict_subID = dict()
 #dict_subID['20170925'] = 'sub-003_ses-1w'
 dict_subID['20170528'] = 'sub-004_ses-baseline'
 dict_subID['20170605'] = 'sub-004_ses-1w'
-dict_subID['20170706'] = 'sub-004_ses-1m'
+dict_subID['20170706_0713'] = 'sub-004_ses-1m'
 #dict_subID['20170717'] = 'sub-004_ses-baseline'
-#dict_subID['20170724'] = 'sub-004_ses-1w'
+#dict_subID['20170724_1000'] = 'sub-004_ses-1w' ##need redo
 #dict_subID['20170821'] = 'sub-004_ses-1m'
-dict_subID['20170724'] = 'sub-011_ses-baseline'
+dict_subID['20170724_0706'] = 'sub-011_ses-baseline'
 dict_subID['20170731'] = 'sub-011_ses-1w'
-dict_subID['20170811'] = 'sub-011_ses-1m'
-#dict_subID['20170811'] = 'sub-011_ses-baseline'
-#dict_subID['20170819'] = 'sub-011_ses-1w'
+dict_subID['20170811_1630'] = 'sub-011_ses-1m'
+#dict_subID['20170811_1630'] = 'sub-011_ses-baseline' ##need redo
+#dict_subID['20170819_0625'] = 'sub-011_ses-1w' ##need redo
 #dict_subID['20170918'] = 'sub-011_ses-1m'
-#subID['20170805'] = '013'
-dict_subID['20170811'] = 'sub-014_ses-baseline'
-dict_subID['20170819'] = 'sub-014_ses-1w'
+dict_subID['20170811_1425'] = 'sub-014_ses-baseline'
+dict_subID['20170819_0742'] = 'sub-014_ses-1w'
 dict_subID['20170923'] = 'sub-014_ses-1m'
 #dict_subID['20170923'] = 'sub-014_ses-baseline'
 #dict_subID['20170930'] = 'sub-014_ses-1w'
@@ -118,7 +117,6 @@ dict_subID['20170923'] = 'sub-014_ses-1m'
 #dict_subID['20170828'] = 'sub-019_ses-baseline'
 #dict_subID['20170905'] = 'sub-019_ses-1w'
 #dict_subID['20171002'] = 'sub-019_ses-1m'
-#subID['20170908'] = '021_sec-pre'
 ########
 ##By 2018-02-28 sub-21_treat1 has not be process
 #######
