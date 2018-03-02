@@ -6,6 +6,7 @@ Created on Mon Nov 27 16:14:44 2017
 """
 #%reset
 import os, sys, tarfile, json, shutil
+import re
 def untar_tgz(root, extract_path='.'):   
     for path, subdirs, files in os.walk(root):
         if "Save" not in re.split(r'[_|@|/]', path) \
