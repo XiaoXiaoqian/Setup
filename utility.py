@@ -98,25 +98,25 @@ dict_subID = dict()
 #dict_subID['20170914'] = 'sub-003_ses-baseline'
 #dict_subID['20170925'] = 'sub-003_ses-1w'
 ####P0302
-#dict_subID['20170528'] = 'sub-004_ses-baseline'
-#dict_subID['20170605'] = 'sub-004_ses-1w'
+dict_subID['20170528'] = 'sub-004_ses-baseline'
+dict_subID['20170605'] = 'sub-004_ses-1w'
 dict_subID['20170706_0713'] = 'sub-004_ses-1m'
 ####P0302
 #dict_subID['20170717'] = 'sub-004_ses-baseline'
 #dict_subID['20170724_1000'] = 'sub-004_ses-1w' ##need redo
 #dict_subID['20170821'] = 'sub-004_ses-1m'
 ####P0302
-#dict_subID['20170724_0706'] = 'sub-011_ses-baseline'
-#dict_subID['20170731'] = 'sub-011_ses-1w'
-#dict_subID['20170811_1630'] = 'sub-011_ses-1m'
+dict_subID['20170724_0706'] = 'sub-011_ses-baseline'
+dict_subID['20170731'] = 'sub-011_ses-1w'
+dict_subID['20170811_1630'] = 'sub-011_ses-1m'
 ####P0302
 #dict_subID['20170811_1630'] = 'sub-011_ses-baseline' ##need redo
 #dict_subID['20170819_0625'] = 'sub-011_ses-1w' ##need redo
 #dict_subID['20170918'] = 'sub-011_ses-1m'
 ####P0302
-#dict_subID['20170811_1425'] = 'sub-014_ses-baseline'
-#dict_subID['20170819_0742'] = 'sub-014_ses-1w'
-#dict_subID['20170923'] = 'sub-014_ses-1m'
+dict_subID['20170811_1425'] = 'sub-014_ses-baseline'
+dict_subID['20170819_0742'] = 'sub-014_ses-1w'
+dict_subID['20170923'] = 'sub-014_ses-1m'
 ####P0302
 #dict_subID['20170923'] = 'sub-014_ses-baseline'
 #dict_subID['20170930'] = 'sub-014_ses-1w'
@@ -127,25 +127,22 @@ dict_subID['20170706_0713'] = 'sub-004_ses-1m'
 #dict_subID['20170828'] = 'sub-019_ses-baseline'
 #dict_subID['20170905'] = 'sub-019_ses-1w'
 #dict_subID['20171002'] = 'sub-019_ses-1m'
-########
-##By 2018-02-28 sub-21_treat1 has not be process
-#######
-#dict_subID['20170910'] = 'sub-021_ses-baseline'
-#dict_subID['20170917'] = 'sub-021_ses-1w'
-#dict_subID['20171013'] = 'sub-021_ses_1m' 
+####P0302
+dict_subID['20170910'] = 'sub-021_ses-baseline'
+dict_subID['20170917'] = 'sub-021_ses-1w'
+dict_subID['20171013'] = 'sub-021_ses_1m' 
 ####P0302
 #dict_subID['20180108'] = 'sub-021_ses_baseline'
 #dict_subID['20180113_0558'] = 'sub-021_ses-1w'
-####P0302
 #dict_subID['20170929'] = 'sub-024_ses-baseline'
 #dict_subID['20171007'] = 'sub-024_ses-1w'
 #dict_subID['20171104'] = 'sub-024_ses-1m'
 #dict_subID['20171208'] = 'sub-026_ses-baseline'
 #dict_subID['20171218'] = 'sub-026_ses-1w'
 ####P0302
-#dict_subID['20180110'] = 'sub-026_ses-1m'
-#dict_subID['20180203'] = 'sub-028_ses-baseline'
-#dict_subID['20180212'] = 'sub-028_ses-1w'
+dict_subID['20180110'] = 'sub-026_ses-1m'
+dict_subID['20180203'] = 'sub-028_ses-baseline'
+dict_subID['20180212'] = 'sub-028_ses-1w'
 ####P0302
 
 #def gen_config():
