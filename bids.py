@@ -4,6 +4,7 @@
 Deal with transferring to BIDS
 **refer heudiconv
 Created on Mon Nov 27 13:33:34 2017
+M
 """
 from dicom_xxq import *
 from utility import *
