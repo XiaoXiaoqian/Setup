@@ -83,6 +83,7 @@ def get_scan_info(root, basedir):
                     phase = re.split(r'[_]', info_subID)[1].split('-')[1]
                     secDir = os.path.join(subDir, 'ses-'+phase)
                     mkdir(secDir)
+                    print(secDir)
                 elif key_subID2 in dict_subID.keys():
                     info_subID = dict_subID[key_subID2]
                     subPrefix = info_subID
@@ -91,7 +92,8 @@ def get_scan_info(root, basedir):
                     mkdir(subDir)
                     phase = re.split(r'[_]', info_subID)[1].split('-')[1]
                     secDir = os.path.join(subDir, 'ses-'+phase)
-                    mkdir(secDir)                    
+                    mkdir(secDir)
+                    print(secDir)
                 else: 
                     print('no such key')
                     subID = re.split(r'[_|@|/]', dcminfo.PatientID)[0].split('s')[-1]
@@ -100,6 +102,7 @@ def get_scan_info(root, basedir):
                     phase = re.split(r'[_|@|/]', dcminfo.PatientID)[1]
                     secDir = os.path.join(subDir, subID)
                     mkdir(secDir)
+                    print(secDir)
                     subPrefix = 'sub-'+subID+'_ses-'+phase
 
 
