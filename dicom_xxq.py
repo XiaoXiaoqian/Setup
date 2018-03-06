@@ -69,10 +69,11 @@ def get_scan_info(root, basedir):
                 mkdir(targetPath)
                 date = dcminfo.ContentDate
                 time = dcminfo.ContentTime.split('.')[0]
+                time2 = dcminfo.StudyTime.split('.')[0]
                 td = time + date
                 acq_time = datetime.strptime(td, '%H%M%S%Y%m%d').isoformat()            
                 key_subID = date
-                key_subID2 = date+'_'+time
+                key_subID2 = date+'_'+time2[0:4]
                 if key_subID in dict_subID.keys():
                     info_subID = dict_subID[key_subID]
                     subPrefix = info_subID
@@ -83,7 +84,7 @@ def get_scan_info(root, basedir):
                     secDir = os.path.join(subDir, 'ses-'+phase)
                     mkdir(secDir)
                 elif key_subID2 in dict_subID.keys():
-                    info_subID = dict_subID[key_subID]
+                    info_subID = dict_subID[key_subID2]
                     subPrefix = info_subID
                     subID = re.split(r'[_]', info_subID)[0].split('-')[1]
                     subDir = os.path.join(targetPath, 'sub-'+subID)
