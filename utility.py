@@ -19,7 +19,7 @@ def untar_tgz(root, extract_path='.'):
                     resultpath = extract_path
                 else:
                     resultpath = os.path.join(extract_path, path[path.rfind(root)+len(root)+1:])
-                print resultpath
+                #print resultpath
                 mkdir(resultpath)
                 if tarfile.is_tarfile(filepath):
                     tar = tarfile.open(filepath, 'r:*')
@@ -41,13 +41,13 @@ def write_json(fname, meta_dict, overwrite=False):
     """
     if os.path.isfile(fname):
         if overwrite:
-            print('    Overwriting previous %s' % os.path.basename(fname))
+            #print('    Overwriting previous %s' % os.path.basename(fname))
             create_file = True
         else:
-            print('    Preserving previous %s' % fname)
+            #print('    Preserving previous %s' % fname)
             create_file = False
     else:
-        print('    Creating new %s' % os.path.basename(fname))
+        #print('    Creating new %s' % os.path.basename(fname))
         create_file = True
     if create_file:
         with open(fname, 'w') as fd:
@@ -64,7 +64,7 @@ def read_json(fname):
         json_dict = json.load(fd)
         fd.close()
     except:
-        print('*** JSON sidecar not found - returning empty dictionary')
+        #print('*** JSON sidecar not found - returning empty dictionary')
         json_dict = dict()
     return json_dict
 
@@ -78,13 +78,13 @@ def copy(file1, file2, overwrite=False):
     """
     if os.path.isfile(file2):
         if overwrite:
-            print('    Overwriting previous %s' % os.path.basename(file2))
+            #print('    Overwriting previous %s' % os.path.basename(file2))
             create_file = True
         else:
-            print('    Preserving previous %s' % os.path.basename(file2))
+            #print('    Preserving previous %s' % os.path.basename(file2))
             create_file = False
     else:
-        print('    Copying %s to %s' % (os.path.basename(file1), os.path.basename(file2)))
+        #print('    Copying %s to %s' % (os.path.basename(file1), os.path.basename(file2)))
         create_file = True
 
     if create_file:
