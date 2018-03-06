@@ -72,6 +72,7 @@ def get_scan_info(root, basedir):
                 td = time + date
                 acq_time = datetime.strptime(td, '%H%M%S%Y%m%d').isoformat()            
                 key_subID = date
+                key_subID2 = data+'_'+time
                 if key_subID in dict_subID.keys():
                     info_subID = dict_subID[key_subID]
                     subPrefix = info_subID
@@ -81,6 +82,15 @@ def get_scan_info(root, basedir):
                     phase = re.split(r'[_]', info_subID)[1].split('-')[1]
                     secDir = os.path.join(subDir, 'ses-'+phase)
                     mkdir(secDir)
+                elif key_subID2 in dict_subID.keys():
+                    info_subID = dict_subID[key_subID]
+                    subPrefix = info_subID
+                    subID = re.split(r'[_]', info_subID)[0].split('-')[1]
+                    subDir = os.path.join(targetPath, 'sub-'+subID)
+                    mkdir(subDir)
+                    phase = re.split(r'[_]', info_subID)[1].split('-')[1]
+                    secDir = os.path.join(subDir, 'ses-'+phase)
+                    mkdir(secDir)                    
                 else: 
                     print('no such key')
                     subID = re.split(r'[_|@|/]', dcminfo.PatientID)[0].split('s')[-1]
