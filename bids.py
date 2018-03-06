@@ -16,5 +16,5 @@ rawdir = os.path.join(basedir, ProjectName, 'raw')
 untardir = os.path.join(basedir, ProjectName, 'untar')
 
 #untardir1 = os.path.join(basedir, ProjectName,'untar/20171218_0653_16703')
-untar_tgz(rawdir, untardir)
+#untar_tgz(rawdir, untardir)
 get_scan_info(untardir, basedir)
