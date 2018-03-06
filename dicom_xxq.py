@@ -72,7 +72,7 @@ def get_scan_info(root, basedir):
                 td = time + date
                 acq_time = datetime.strptime(td, '%H%M%S%Y%m%d').isoformat()            
                 key_subID = date
-                key_subID2 = data+'_'+time
+                key_subID2 = date+'_'+time
                 if key_subID in dict_subID.keys():
                     info_subID = dict_subID[key_subID]
                     subPrefix = info_subID
