@@ -156,6 +156,7 @@ dict_subID['20171104'] = 'sub-024_ses-1m'
 #dict_subID['20180110'] = 'sub-026_ses-1m'
 #dict_subID['20180203'] = 'sub-028_ses-baseline'
 #dict_subID['20180212'] = 'sub-028_ses-1w'
+dict_subID['20180307'] = 'sub-028_ses-1m'
 ####P0302
 
 #def gen_config():
