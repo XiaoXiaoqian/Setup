@@ -12,5 +12,5 @@ do
   else
     subID=0${sub}
   fi
-  docker run -ti --rm -v $DataPath:/data:ro -v $OutputPath:/out  -v $WorkPath:/work -v $FreesuferLicsensePath/license.txt:/opt/freesurfer/license.txt poldracklab/fmriprep:$NipVersion /data /out/out participant --ignore fieldmaps --ignore slicetiming --longitudinal --participant_label sub-$subID --use-aroma --fs-license-file /opt/freesurfer/license.txt --resource-monitor -w /work
+    docker run -ti --rm -v $DataPath:/data:ro -v $OutputPath:/out  -v $WorkPath:/work -v $FreesuferLicsensePath/license.txt:/opt/freesurfer/license.txt poldracklab/fmriprep:$NipVersion /data /out/out participant --ignore fieldmaps --ignore slicetiming --longitudinal --participant_label sub-$subID --use-aroma --fs-license-file /opt/freesurfer/license.txt --resource-monitor -w /work --low-mem —nthreads 8 --omp-nthreads 8 --output-space T1w template
 done
