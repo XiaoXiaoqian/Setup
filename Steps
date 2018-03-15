@@ -1,3 +1,12 @@
 Preprocess.py: copy files
 mv.sh: get ride of useless files
 bids.py: 
+
+1. Run FMRIPREP with --use-aroma option
+2. Take the *bold_space-MNI152NLin2009cAsym_preproc.nii.gz outputs.
+3. Either discard 4 first volumes, or as many volumes as the FMRIPREP steady non-state detector recommends as indicated by the number of NonSteadyStateOutlier. Alternatively you can use these columns in the denoising design matrix (see below).
+4. Smooth the data with 8mm (or whatever is appropriate for your data). Alternatively you can opt for not smoothing the 4D data and smoothing only the first level statistical maps prior to doing group level.
+5. Create a denoising design matrix that would include the following columns from the _confounds.tsv file: AROMAAggrComp* (those are the noise components from ICA AROMA), WhiteMatter, and aCompCor01 (first component of the anatomical compcor is a good approximation of the mean signal in WM and CSF). In addition to achieve the linear detrending you should add a column of ascending numbers (1,2,3,4 etc).
+6. Fit this model to the data and save the residuals - this is your denoised data.
+7. Save the number of columns for each run - this is your tDOF-loss you will use on group level.
+8. Perform band pass filtering (remember to do it after nuisance regression!).
