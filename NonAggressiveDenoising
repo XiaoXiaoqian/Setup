@@ -1,0 +1,4 @@
+fsl_regfilt -i sub-<subject_label>_task-<task_id>_bold_space-T1w_preproc.nii.gz \
+    -f $(cat sub-<subject_label>_task-<task_id>_bold_AROMAnoiseICs.csv) \
+    -d sub-<subject_label>_task-<task_id>_bold_MELODICmix.tsv \
+    -o sub-<subject_label>_task-<task_id>_bold_space-<space>_AromaNonAggressiveDenoised.nii.gz
