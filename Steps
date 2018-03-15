@@ -10,3 +10,6 @@ bids.py:
 6. Fit this model to the data and save the residuals - this is your denoised data.
 7. Save the number of columns for each run - this is your tDOF-loss you will use on group level.
 8. Perform band pass filtering (remember to do it after nuisance regression!).
+###############
+1. Skip intensity normalization since I don’t think it influences temporal noise and is more of convenience scaling operation.
+2. Skip despiking. As far as I know this cannot be easily done with nuissance regression since 3dDespike changes each voxel differently (so we cannot generate a single column for all voxels to include in the _confounds.tsv file). 
