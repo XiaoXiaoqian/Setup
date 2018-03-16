@@ -4,7 +4,7 @@ DataPath='/Users/xiaoqian/Projects/aTBS/source'
 WorkPath='/Users/xiaoqian/Projects/aTBS/work'
 NipVersion='latest'
 
-for sub in 1 2 3 4 11 14 16 18 19 21 26 28
+for sub in 1 2 3 4 11 14 16 18 19 21 24 26 28
 do 
   if [ ${sub} -lt 10];
   then
