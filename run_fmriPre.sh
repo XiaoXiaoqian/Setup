@@ -1,1 +1,6 @@
-docker run -ti --rm -v $DataPath:/data:ro -v $OutputPath:/out -v $WorkPath:/work -v $FreesuferLicsensePath/license.txt:/opt/freesurfer/license.txt poldracklab/fmriprep:$NipVersion /data /out/out participant --ignore fieldmaps --ignore slicetiming --longitudinal --participant_label sub-$subID --use-aroma --fs-license-file /opt/freesurfer/license.txt --resource-monitor -w /work --low-mem --nthreads 24 --omp-nthreads 24
+baseDir='/Users/xiaoqian/Projects/aTBS'
+dataDir=${basdDir}/source
+outputDir=${basdDir}/derivatives
+workDir=${basdDir}/work
+freesurferDir='/Users/xiaoqian/tools/freesurfer'
+fmriprep $dataDir $outputDir participant --participant-label sub-$subID --ignore fieldmaps --ignore slicetiming --longitudinal --use-aroma --fs-license-file ${freesurferDir}/license.txt --resource-monitor -w $workDir --low-mem --nthreads 24 --omp-nthreads 24
