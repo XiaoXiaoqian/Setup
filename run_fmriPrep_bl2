@@ -1,0 +1,28 @@
+need to be done: 1 2 3 4 11 14 16 18 19 21 24 26 28
+still there:-
+In processing: 28
+Done:-
+
+
+baseDir='/Users/xiaoqian/Projects/aTBS'
+dataDir=${baseDir}/source
+outputDir=${baseDir}/derivatives
+workDir=${baseDir}/work
+freesurferDir=/Applications/freesurfer
+NipVersion='latest'
+
+docker run -ti --rm -v $DataPath:/data:ro -v $OutputPath:/out \
+-v $WorkPath:/work -v $FreesuferLicsensePath/license.txt:/opt/freesurfer/license.txt \
+poldracklab/fmriprep:$NipVersion /data /out/out participant --ignore fieldmaps \
+--ignore slicetiming --longitudinal --participant_label sub-$subID --use-aroma \
+--fs-license-file /opt/freesurfer/license.txt -w /work --low-mem --no-freesurfer \
+--nthreads 8 --omp-nthreads 8 --resource-monitor
+
+ls -lah ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/Docker.qcow2  
+
+killall Docker && open /Applications/Docker.app
+
+cd /Applications/Docker.app/Contents/MacOS
+
+./qemu-img resize ~/Library/Containers/com.docker.docker/Data/com.docker.driver.
+amd64-linux/Docker.qcow2 +100G
