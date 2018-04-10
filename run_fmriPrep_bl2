@@ -4,11 +4,11 @@ In processing: 28
 Done:-
 
 
-baseDir='/Users/xiaoqian/Projects/aTBS'
-dataDir=${baseDir}/source
-outputDir=${baseDir}/derivatives
-workDir=${baseDir}/work
-freesurferDir=/Applications/freesurfer
+BaseDir='/Users/xiaoqian/Projects/aTBS'
+DataDir=${BaseDir}/source
+OutputDir=${BaseDir}/derivatives
+WorkDir=${BaseDir}/work
+FreesuferLicsensePath=/Users/xiaoqian/tools/freesurfer
 NipVersion='latest'
 
 docker run -ti --rm -v $DataPath:/data:ro -v $OutputPath:/out \
