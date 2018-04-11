@@ -13,3 +13,7 @@ bids.py:
 ###############
 1. Skip intensity normalization since I don’t think it influences temporal noise and is more of convenience scaling operation.
 2. Skip despiking. As far as I know this cannot be easily done with nuissance regression since 3dDespike changes each voxel differently (so we cannot generate a single column for all voxels to include in the _confounds.tsv file). 
+
+
+Run level: 6 motion parameters, FD, and aCompCor. 
+Group level: mean FD.
