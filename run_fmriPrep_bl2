@@ -1,9 +1,9 @@
 need to be done: 1 2 3 4 11 14 16 18 19 21 24 26 28
 still there:-
-In processing: 28
-Done:-
+In processing: 26
+Done:28
 
-
+subID='026'
 BaseDir='/Users/xiaoqian/Projects/aTBS'
 DataDir=${BaseDir}/source
 OutputDir=${BaseDir}/derivatives
