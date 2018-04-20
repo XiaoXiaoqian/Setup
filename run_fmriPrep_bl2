@@ -3,7 +3,7 @@ still there:
 In processing:
 Done:2 3 14 28
 
-subID='024'
+subID='004'
 BaseDir='/Users/xiaoqian/Projects/aTBS'
 DataDir=${BaseDir}/source
 OutputDir=${BaseDir}/derivatives
