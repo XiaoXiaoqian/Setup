@@ -18,6 +18,16 @@ poldracklab/fmriprep:$NipVersion /data /out/out participant --ignore fieldmaps \
 --fs-license-file /opt/freesurfer/license.txt -w /work --low-mem --no-freesurfer \
 --nthreads 8 --omp-nthreads 8 --resource-monitor --ignore-aroma-denoising-errors
 
+
+fmriprep-docker -ti --rm -v $DataPath:/data:ro -v $OutputPath:/out \
+-v $WorkPath:/work -v $FreesuferLicsensePath/license.txt:/opt/freesurfer/license.txt \
+poldracklab/fmriprep:$NipVersion /data /out/out participant --ignore fieldmaps \
+--ignore slicetiming --longitudinal --participant_label sub-$subID --use-aroma \
+--fs-license-file /opt/freesurfer/license.txt -w /work --low-mem --no-freesurfer \
+--nthreads 8 --omp-nthreads 8 --resource-monitor --ignore-aroma-denoising-errors
+
+
+
 ls -lah ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/Docker.qcow2  
 
 killall Docker && open /Applications/Docker.app
