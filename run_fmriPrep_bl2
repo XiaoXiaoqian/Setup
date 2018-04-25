@@ -11,6 +11,7 @@ WorkDir=${BaseDir}/work
 FreesuferLicsensePath=/Users/xiaoqian/tools/freesurfer
 NipVersion='latest'
 
+#no work
 docker run -ti --rm \
 -v $DataDir:/data:ro -v $OutputDir:/out \
 -v $WorkDir:/work -v $FreesuferLicsensePath/license.txt:/opt/freesurfer/license.txt \
@@ -19,6 +20,13 @@ poldracklab/fmriprep:$NipVersion /data /out/out participant --ignore fieldmaps \
 --fs-license-file /opt/freesurfer/license.txt -w /work --low-mem --no-freesurfer \
 --nthreads 8 --omp-nthreads 8 --resource-monitor --ignore-aroma-denoising-errors
 
+docker run -ti --rm \
+-v $DataDir:/data:ro -v $OutputDir:/out \
+-v $WorkDir:/work -v $FreesuferLicsensePath/license.txt:/opt/freesurfer/license.txt \
+poldracklab/fmriprep:$NipVersion /data /out/out participant --ignore fieldmaps \
+--ignore slicetiming --longitudinal --participant_label sub-$subID --use-aroma \
+--fs-license-file /opt/freesurfer/license.txt --low-mem --no-freesurfer \
+--nthreads 8 --omp-nthreads 8 --resource-monitor --ignore-aroma-denoising-errors
 
 
 
