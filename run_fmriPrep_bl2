@@ -1,7 +1,7 @@
 need to be done: 1 2 3 4 11 14 16 18 19 21 24 26 28
 still there:
-In processing: 1, 4
-Done:2 3 14 28
+In processing: 4 11
+Done:1 2 3 14 28
 
 subID='004'
 BaseDir='/Users/xiaoqian/Projects/aTBS'
@@ -26,10 +26,15 @@ poldracklab/fmriprep:$NipVersion /data /out/out participant \
 docker run -ti --rm \
 -v $DataDir:/data:ro -v $OutputDir:/out \
 -v $WorkDir:/work -v $FreesuferLicsensePath/license.txt:/opt/freesurfer/license.txt \
-poldracklab/fmriprep:$NipVersion /data /out/out participant --ignore fieldmaps \
---ignore slicetiming --longitudinal --participant_label sub-$subID --use-aroma \
---fs-license-file /opt/freesurfer/license.txt --low-mem --no-freesurfer \
---nthreads 8 --omp-nthreads 8 --resource-monitor --ignore-aroma-denoising-errors
+poldracklab/fmriprep:$NipVersion /data /out/out participant \
+-w /work \
+--ignore fieldmaps --ignore slicetiming --no-freesurfer \
+--longitudinal \
+--use-aroma --ignore-aroma-denoising-errors \
+--participant_label sub-$subID \
+--fs-license-file /opt/freesurfer/license.txt --low-mem \
+--nthreads 16 --omp-nthreads 2
+
 
 
 
