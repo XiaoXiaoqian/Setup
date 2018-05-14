@@ -117,15 +117,18 @@ dict_subID = dict()
 #dict_subID['20170910'] = 'sub-021_ses-baseline'
 #dict_subID['20170917'] = 'sub-021_ses-1w'
 #dict_subID['20171013'] = 'sub-021_ses-1m' 
-dict_subID['20170929'] = 'sub-024_ses-baseline'
-dict_subID['20171007'] = 'sub-024_ses-1w'
-dict_subID['20171104'] = 'sub-024_ses-1m'
+#dict_subID['20170929'] = 'sub-024_ses-baseline'
+#dict_subID['20171007'] = 'sub-024_ses-1w'
+#dict_subID['20171104'] = 'sub-024_ses-1m'
 #dict_subID['20171208'] = 'sub-026_ses-baseline'
 #dict_subID['20171218'] = 'sub-026_ses-1w'
 #dict_subID['20180110'] = 'sub-026_ses-1m'
 #dict_subID['20180203'] = 'sub-028_ses-baseline'
 #dict_subID['20180212'] = 'sub-028_ses-1w'
 #dict_subID['20180307'] = 'sub-028_ses-1m'
+dict_subID['20180311'] = 'sub-029_ses-baseline'
+dict_subID['20180318'] = 'sub-029_ses-1w'
+dict_subID['20180405'] = 'sub-029_ses-1m'
 
 ####P0302
 #Treatment 2
