@@ -13,12 +13,13 @@ import os.path as op
 from glob import glob
 
 remotehost = 'xiaoqian@cnic22.stanford.edu'
-#remotedir = '/home/xiaoqian/Documents/nimsfs/raw/nolanw/atbs'
+remotedir = '/home/xiaoqian/Documents/nimsfs/raw/nolanw/atbs'
 localdir = '/Users/xiaoqian/Projects/aTBS/raw'
 
 for i in dict_subID:
     print (dict_subID[i])
-    filename = os.path.join(remotedir, i+'*')
+    filename1 = os.path.join(remotedir, i+'*', '*'+'_mux_scan')
+    filename2 = os.path.join(remotedir, i+'*', '*'+'_sag')
     os.system('scp -r "%s:%s" "%s"' % (remotehost, filename, localdir))
 
 #two data sets were putting into open_atbs:20171208_0637_16657  20171209_0700_16665
