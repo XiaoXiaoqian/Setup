@@ -1,7 +1,10 @@
 need to be done: 1 2 3 4 11 14 16 18 19 21 24 26 28
 still there:
-In processing: 11
-Done:1 2 3 14 16 28
+In processing: 11 26
+Done:1 2 3 14 16 21 28
+
+F: 4, 18, 19, 24
+
 
 subID='004'
 BaseDir='/Users/xiaoqian/Projects/aTBS'
