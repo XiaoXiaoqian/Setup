@@ -31,6 +31,7 @@ docker run -ti --rm \
 -v $WorkDir:/work -v $FreesuferLicsensePath/license.txt:/opt/freesurfer/license.txt \
 poldracklab/fmriprep:$NipVersion /data /out/out participant \
 -w /work \
+-t resting1 \
 --ignore fieldmaps --ignore slicetiming --no-freesurfer \
 --longitudinal \
 --use-aroma --ignore-aroma-denoising-errors \
