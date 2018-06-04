@@ -138,8 +138,8 @@ dict_subID = dict()
 #all subID for subjects from open label will name as 0**
 #dict_subID['20180421'] = 'sub-202_ses-baseline'
 #dict_subID['20180505'] = 'sub-202_ses-1w'
-dict_subID['20180314'] = 'sub-204_ses-baseline'
-dict_subID['20180417'] = 'sub-204_ses-1w'
+#dict_subID['20180314'] = 'sub-204_ses-baseline'
+#dict_subID['20180417'] = 'sub-204_ses-1w'
 
 ####P0302
 #Treatment 2
