@@ -129,14 +129,15 @@ dict_subID = dict()
 #dict_subID['20180311'] = 'sub-029_ses-baseline'
 #dict_subID['20180318'] = 'sub-029_ses-1w'
 #dict_subID['20180405'] = 'sub-029_ses-1m'
-dict_subID['20180520'] = 'sub-005_ses-baseline'
-dict_subID['20180527'] = 'sub-005_ses-1w'
-dict_subID['20180519'] = 'sub-031_ses-baseline'
-dict_subID['20180528'] = 'sub-031_ses-1w'
+##add possible open label
+#dict_subID['20180520'] = 'sub-005_ses-baseline'
+#dict_subID['20180527'] = 'sub-005_ses-1w'
+#dict_subID['20180519'] = 'sub-031_ses-baseline'
+#dict_subID['20180528'] = 'sub-031_ses-1w'
 #all subID for subjects from blind shim will name as 2**
 #all subID for subjects from open label will name as 0**
-dict_subID['20180421'] = 'sub-202_ses-baseline'
-dict_subID['20180505'] = 'sub-202_ses-1w'
+#dict_subID['20180421'] = 'sub-202_ses-baseline'
+#dict_subID['20180505'] = 'sub-202_ses-1w'
 dict_subID['20180314'] = 'sub-204_ses-baseline'
 dict_subID['20180417'] = 'sub-204_ses-1w'
 
