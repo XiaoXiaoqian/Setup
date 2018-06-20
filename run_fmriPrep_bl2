@@ -6,7 +6,7 @@ Done:
 
 
 
-subID='004'
+subID='016'
 BaseDir='/Users/xiaoqian/Projects/aTBS'
 DataDir=${BaseDir}/source
 OutputDir=${BaseDir}/derivatives
