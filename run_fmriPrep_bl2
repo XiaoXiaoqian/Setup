@@ -1,7 +1,7 @@
-need to be done: 1 2 3 4 11 14 16 18 19 21 24 26 28 29
-still there: 
-In processing:  26(bsl2)
-Done:1 2 3 4(bsl2) 11(bsl2) 14 16 18(bsl2) 19(bsl2) 21 24(bsl2) 28 29(bsl2)
+need to be done: 1 2 3 4 5 11 14 16 18 19 21 24 26 28 29 31 202 204
+still there: 4 18 19 24 26 204
+In processing:4  
+Done:
 
 
 
@@ -36,7 +36,7 @@ poldracklab/fmriprep:$NipVersion /data /out/out participant \
 --use-aroma --ignore-aroma-denoising-errors \
 --participant_label sub-$subID \
 --fs-license-file /opt/freesurfer/license.txt --low-mem \
---nthreads 16 --omp-nthreads 2
+--nthreads 24 --omp-nthreads 3
 
 
 
